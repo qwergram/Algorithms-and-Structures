@@ -3,7 +3,6 @@
 def mergesort(values):
     if len(values) > 1:
         first_half, second_half, result = mergesort(values[:len(values)//2]), mergesort(values[len(values)//2:]), []
-        fh_cursor = sh_cursor = 0
         while first_half or second_half:
             if not first_half and second_half:
                 result.append(second_half.pop(0))
@@ -24,6 +23,6 @@ assert mergesort([3,2,1]) == [1,2,3]
 assert mergesort([3,6,3,8,9,1,4]) == [1,3,3,4,6,8,9]
 assert mergesort([3,1,5]) == [1,3,5]
 assert mergesort([]) == []
-assert mergesort([]) == []
-assert mergesort([]) == []
-assert mergesort([]) == []
+assert mergesort([2,1]) == [1,2]
+assert mergesort([2,1,1]) == [1,1,2]
+assert mergesort([2,1,1,2,5]) == [1,1,2,2,5]
