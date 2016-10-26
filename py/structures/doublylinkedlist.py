@@ -4,6 +4,8 @@ class Node:
         self.value = value
         self._next = None
         self._prev = None
+        self.next = next
+        self.prev = prev
 
     @property
     def next(self):
@@ -84,7 +86,50 @@ class DoublyLinkedList:
         self.size -= 1
         return to_delete.value if r else None
         
+    def pop(self):
+        if self.size > 1:
+            return self.remove(self.size - 1, r=True)
+        elif self.size == 1:
+            popped = self.tail
+            self.tail = self.head = None
+            self.size = 0
+            return popped.value
+        else:
+            raise IndexError("cannot pop from empty list")
 
+    def insert(self, index, value):
+        if index == 0:
+            self.head = Node(value, self.head)
+        elif index < (self.size // 2):
+            cursor = self.head
+            for i in range(index - 1):
+                cursor = cursor.next
+            cursor.next = Node(value, cursor.next)
+        elif index < self.size:
+            cursor = self.tail
+            inverse_index = self.size - index - 1
+            for i in range(inverse_index):
+                cursor = cursor.prev
+            cursor.prev = Node(value, None, cursor.prev)
+        else:
+            self.add(value)
+        self.size += 1
+
+    def change(self, index, value):
+        if index < (self.size // 2):
+            cursor = self.head
+            for i in range(index):
+                cursor = cursor.next
+            cursor.value = value
+        elif index < self.size:
+            inverse_index = self.size - index - 1
+            cursor = self.tail
+            for i in range(inverse_index):
+                cursor = cursor.prev
+            cursor.value = value
+        else:
+            raise IndexError('list index out of range')
+            
             
             
     
