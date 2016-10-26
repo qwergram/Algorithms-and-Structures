@@ -9,7 +9,7 @@ class SinglyLinkedList:
 
     def __init__(self, value=None):
         self.size = 0
-        if value is None:
+        if value is not None:
             self.head = Node(value)
             self.size += 1
         else:
@@ -144,7 +144,7 @@ class SinglyLinkedList:
 
 def tests():
     new_list = SinglyLinkedList()
-    assert len(new_list) == 0
+    assert len(new_list) == 0, len(new_list)
     new_list = SinglyLinkedList(1)
     assert len(new_list) == 1
     assert new_list[0] == 1
@@ -199,6 +199,11 @@ def tests():
     assert list_all[0] == 'C'
     assert list_all[1] == 'B'
     assert list_all[2] == 'A'
+    list_copy = list_all.copy()
+    assert list_copy[0] == 'C'
+    assert list_copy[1] == 'B'
+    assert list_copy[2] == 'A'
+
     
 
 
