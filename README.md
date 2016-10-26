@@ -13,7 +13,7 @@ The languages that are used are Python, C# and C++.
     <tr>
         <td>Quicksort</td>
         <td>Python</td>
-        <td></td>
+        <td><a href="https://github.com/qwergram/Algorithms-and-Structures/blob/master/py/sorts/quicksort.py">link</a></td>
     </tr>
     <tr>
         <td>Quicksort</td>
@@ -23,7 +23,7 @@ The languages that are used are Python, C# and C++.
     <tr>
         <td>Mergesort</td>
         <td>Python</td>
-        <td></td>
+        <td><a href="https://github.com/qwergram/Algorithms-and-Structures/blob/master/py/sorts/mergesort.py">link</a></td>
     </tr>
     <tr>
         <td>Mergesort</td>
@@ -33,7 +33,7 @@ The languages that are used are Python, C# and C++.
     <tr>
         <td>Bubble sort</td>
         <td>Python</td>
-        <td></td>
+        <td><a href="https://github.com/qwergram/Algorithms-and-Structures/blob/master/py/sorts/bubblesort.py">link</a></td>
     </tr>
     <tr>
         <td>Bubble sort</td>
@@ -43,7 +43,7 @@ The languages that are used are Python, C# and C++.
     <tr>
         <td>Insertion sort</td>
         <td>Python</td>
-        <td></td>
+        <td><a href="https://github.com/qwergram/Algorithms-and-Structures/blob/master/py/sorts/insertionsort.py">link</a></td>
     </tr>
     <tr>
         <td>Insertion sort</td>
@@ -71,10 +71,12 @@ The languages that are used are Python, C# and C++.
     <tr>
         <td>Singly-Linked List</td>
         <td>Python</td>
+        <td><a href="https://github.com/qwergram/Algorithms-and-Structures/blob/master/py/structures/singlylinkedlist.py">link</a></td>
     </tr>
     <tr>
         <td>Doubly-Linked List</td>
         <td>Python</td>
+        <td><a href="https://github.com/qwergram/Algorithms-and-Structures/blob/master/py/structures/doublylinkedlist.py">link</a></td>
     </tr>
     <tr><td>Array</td></tr>
     <tr><td>Stack</td></tr>
