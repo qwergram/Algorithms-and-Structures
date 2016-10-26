@@ -115,6 +115,7 @@ class SinglyLinkedList:
     def copy(self):
         if self.head:
             new_list = SinglyLinkedList(self.head.value)
+            cursor = self.head.next
             while cursor:
                 new_list.add(cursor.value)
                 cursor = cursor.next
