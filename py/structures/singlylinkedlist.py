@@ -114,7 +114,14 @@ class SinglyLinkedList:
             self.head = prev
     
     def copy(self):
-        raise NotImplementedError()
+        if self.head:
+            new_list = SinglyLinkedList(self.head.value)
+            while cursor:
+                new_list.add(cursor.value)
+                cursor = cursor.next
+            return new_list
+        else:
+            return SinglyLinkedList()
 
     def __slice__(self, start=None, end=None, step=None):
         raise NotImplementedError()
