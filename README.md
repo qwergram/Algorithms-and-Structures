@@ -68,10 +68,13 @@ The languages that are used are Python, C# and C++.
         <td>Langauge</td>
         <td>Link</td>
     </tr>
+    <tr>
+        <td>Singly-Linked List</td>
+        <td>Python</td>
+    </tr>
     <tr><td>Array</td></tr>
     <tr><td>Stack</td></tr>
     <tr><td>Queue</td></tr>
-    <tr><td>Singly-Linked List</td></tr>
     <tr><td>Doubly-Linked List</td></tr>
     <tr><td>Skip List</td></tr>
     <tr><td>Hash Table</td></tr>
