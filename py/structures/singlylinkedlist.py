@@ -61,7 +61,6 @@ class SinglyLinkedList:
             cursor = self.head
             if index != 0:
                 for i in range(index - 1):
-                    print(cursor.value)
                     cursor = cursor.next
                 to_delete = cursor.next
                 cursor.next = cursor.next.next
