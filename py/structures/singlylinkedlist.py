@@ -9,7 +9,7 @@ class SinglyLinkedList:
 
     def __init__(self, value=None):
         self.size = 0
-        if value:
+        if value is None:
             self.head = Node(value)
             self.size += 1
         else:
@@ -122,6 +122,19 @@ class SinglyLinkedList:
             return new_list
         else:
             return SinglyLinkedList()
+
+    def isLooping(self):
+        if self.head:
+            try:
+                turtle = bunny = self.head
+                while turtle != bunny:
+                    turtle = turtle.next
+                    bunny = bunny.next.next
+                return True
+            except AttributeError:
+                return False
+        else:
+            return False
 
     def __slice__(self, start=None, end=None, step=None):
         raise NotImplementedError()
