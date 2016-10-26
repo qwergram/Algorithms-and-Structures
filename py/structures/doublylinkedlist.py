@@ -129,7 +129,36 @@ class DoublyLinkedList:
             cursor.value = value
         else:
             raise IndexError('list index out of range')
+
+    def reverse(self):
+        if self.size > 1:
+            cursor = self.head
+            while cursor:
+                nextCursor = cursor.next
+                cursor.next, cursor.prev = cursor.prev, cursor.next
+                cursor = nextCursor 
+            self.head, self.tail = self.tail, self.head
             
+    def copy(self):
+        if self.head and self.tail:
+            new_list = DoublyLinkedList(self.head.value)
+            cursor = self.head.next
+            while cursor:
+                new_list.add(cursor.value)
+                cursor = cursor.next
+            return new_list
+        else:
+            return DoublyLinkedList()
             
-            
+    def isLooping(self):
+        if self.head and self.tail:
+            try:
+                turtle = bunny = self.head
+                while turtle != bunny:
+                    turtle = turtle.next
+                    bunny = bunny.next.next
+                return True
+            except IndexError:
+                pass
+        return False
     
