@@ -30,9 +30,18 @@ The languages that are used are Python, C# and C++.
         <td>C#</td>
         <td></td>
     </tr>
+    <tr>
+        <td>Bubble sort</td>
+        <td>Python</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Bubble sort</td>
+        <td>C#</td>
+        <td></td>
+    </tr>
     <tr><td>Timsort</td></tr>
     <tr><td>Heapsort</td></tr>
-    <tr><td>Bubble sort</td></tr>
     <tr><td>Insertion sort</td></tr>
     <tr><td>Selection sort</td></tr>
     <tr><td>Tree sort</td></tr>
