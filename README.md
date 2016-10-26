@@ -18,7 +18,7 @@ The languages that are used are Python, C# and C++.
     <tr>
         <td>Quicksort</td>
         <td>C#</td>
-        <td></td>
+        <td><a href="https://github.com/qwergram/Algorithms-and-Structures/blob/master/cs/sorts/quicksort.cs">link</a></td>
     </tr>
     <tr>
         <td>Mergesort</td>
@@ -28,7 +28,7 @@ The languages that are used are Python, C# and C++.
     <tr>
         <td>Mergesort</td>
         <td>C#</td>
-        <td></td>
+        <td><a href="https://github.com/qwergram/Algorithms-and-Structures/blob/master/cs/sorts/mergesort.cs">link</a></td>
     </tr>
     <tr>
         <td>Bubble sort</td>
@@ -38,7 +38,7 @@ The languages that are used are Python, C# and C++.
     <tr>
         <td>Bubble sort</td>
         <td>C#</td>
-        <td></td>
+        <td><a href="https://github.com/qwergram/Algorithms-and-Structures/blob/master/cs/sorts/bubblesort.cs">link</a></td>
     </tr>
     <tr>
         <td>Insertion sort</td>
@@ -48,7 +48,7 @@ The languages that are used are Python, C# and C++.
     <tr>
         <td>Insertion sort</td>
         <td>C#</td>
-        <td></td>
+        <td><a href="https://github.com/qwergram/Algorithms-and-Structures/blob/master/cs/sorts/insertionsort.cs">link</a></td>
     </tr>
     <tr><td>Timsort</td></tr>
     <tr><td>Heapsort</td></tr>
