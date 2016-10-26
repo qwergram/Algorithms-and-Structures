@@ -104,7 +104,24 @@ class SinglyLinkedList:
         else:
             raise IndexError('list index out of range')
 
-            
+    def reverse(self):
+        if self.head:
+            cursor = self.head
+            prev = None
+            while cursor:
+                cursor.next, next = prev, cursor.next
+                prev, cursor = cursor, next
+            self.head = prev
+    
+    def copy(self):
+        raise NotImplementedError()
+
+    def __slice__(self, start=None, end=None, step=None):
+        raise NotImplementedError()
+
+    def __str__(self):
+        return super().__str__(self)
+
 def tests():
     new_list = SinglyLinkedList()
     assert len(new_list) == 0
@@ -158,7 +175,11 @@ def tests():
     assert list_all[0] == 'A'
     assert list_all[1] == 'B'
     assert list_all[2] == 'C'
-
+    list_all.reverse()
+    assert list_all[0] == 'C'
+    assert list_all[1] == 'B'
+    assert list_all[2] == 'A'
+    
 
 
 tests()
