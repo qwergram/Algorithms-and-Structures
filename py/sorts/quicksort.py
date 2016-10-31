@@ -2,6 +2,7 @@
 # https://en.wikipedia.org/wiki/Quicksort
 
 # According to MS, this is wrong
+# According to the Python Community, this is right
 def recursiveQuicksort(values):
     if values:
         pivot, smaller, larger = values[0], [], []
@@ -14,7 +15,9 @@ def recursiveQuicksort(values):
     return values
 
 
-
+# According to MS, this is right
+# According to the Python Community, this is okay
+# However it reeks of C
 def inplaceQuicksort(values, begin=0, end=None):
     def partition(array, begin, end):
         pivot = begin
